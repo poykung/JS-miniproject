@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCOME AND EXPENSE</title>
+    
+</head>
+<body>
+    <h1>Income and expense</h1>
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <h4>balance (THB)</h4>
+        <h1 id="blance">0.00 THB</h1>
+        <div class="income-expense-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-income" class="money-income">฿200</p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money-minus">฿200</p>
+            </div>
+        </div>
+        <h3>Statement</h3>
+        <ul id="list" class="list"></ul>
+        <h3>Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Transaction name</label>
+                <input type="text" id="text" placeholder="please... specify the transaction">
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount</label><br>
+                (+)&nbsp;Income&nbsp;&nbsp;/&nbsp;&nbsp;(-)&nbsp;Expense
+                <input type="number" id="amount" placeholder="amount">
+            </div>
+            <button class="btn">ADD</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
