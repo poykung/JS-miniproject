@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Kanit:wght@500&display=swap');
+/* import font เพื่อเข้ามาเรียกใช้งานจาก google font*/
+*{
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #FFF;
+    display: flex; /* จัดเรียงส่วนต่างๆให้อยู่ในรูปแบบแนวนอน */
+    flex-direction: column; /* จัดเรียงให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดรูปแบบให้อยู่กึ่งกลาง*/
+    justify-content: center;
+    height: 100vh;
+    margin: 30;
+    padding: 20px;
+}
+
+body p{
+    text-decoration: underline;
+}
+
+.btn{
+    background-color: orange;
+    color: white;
+    cursor: pointer; /* กำหนดให้เป็น cursor เมื่อนำ mouse ไปวาง */
+    border-radius: 4px; /* กำหนดเส้นโค้งรอบนอก */
+    font-size: 14px;
+    padding: 3px 3px;
+    margin: 7px;
+
+}
+
+.money-img{
+    width : 310px;
+    background-color: orange;
+    padding: 15px;
+}
+
+.currency{
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select{
+    padding: 3px 3px 3px 3px;
+    font-size: 14px;
+    background: transparent; 
+}
+
+.currency input{
+    margin-left: 7px;
+    font-size: 18;
+    text-align: right;
+}
+
+.switch-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rate{
+    font-size: 16px;
+    text-decoration: underline;
+}
